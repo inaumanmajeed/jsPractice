@@ -1,0 +1,61 @@
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Grey+Qo&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+/* reset css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  text-justify: justify;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-family: "Grey Qo", sans-serif;
+  padding: 2rem 2rem 0 2rem;
+}
+p{
+    font-family: "Grey Qo", sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.content__area {
+  width: fit-content;
+  border-radius: 16px;
+  box-shadow: 2px 8px 4px 0px #00000014;
+  padding: 2rem;
+
+ 
+}
+
+.clock__div{
+     display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+    padding:0 2rem;
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 7rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+    width: 180px;
+}
+
