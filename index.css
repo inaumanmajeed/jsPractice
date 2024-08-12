@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Exo:400,700");
 @import url("https://fonts.googleapis.com/css2?family=Grey+Qo&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
-
 * {
   margin: 0px;
   padding: 0px;
@@ -33,9 +32,11 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   margin-top: 2rem;
+  gap: 1rem;
 }
 h1 {
   text-align: center;
@@ -43,12 +44,12 @@ h1 {
   font-size: 50px;
   position: relative;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-a:hover{
-    text-decoration: underline;
-    text-decoration-color: #fff;
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff;
 }
 h2 {
   text-align: center;
@@ -65,20 +66,20 @@ h1::after {
   position: absolute;
 }
 
-.copyright{
-    text-decoration: none;
-    position: absolute;
-    bottom: 10px;
-    color: #fff;
-    font-size: 15px;
+.copyright {
+  text-decoration: none;
+  position: absolute;
+  bottom: 10px;
+  color: #fff;
+  font-size: 15px;
 }
-.copyright:hover{
-    text-decoration: none;
+.copyright:hover {
+  text-decoration: none;
 }
 .copyright span {
-   color: #141414;
-   font-size: 25px;
-   font-family: "Grey Qo", sans-serif;
+  color: #141414;
+  font-size: 25px;
+  font-family: "Grey Qo", sans-serif;
 }
 /* animation background */
 

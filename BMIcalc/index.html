@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI-calc | js practice</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content__area">
+        <h1>BMI Calculator</h1>
+        <p>Enter your weight and height to calculate your BMI</p>
+        <form action="index.html" method="post">
+          <div class="input__section">
+            <label for="height">Height: </label>
+            <input
+              type="number"
+              id="height"
+              placeholder="Height in cm"
+            />
+          </div>
+          <div class="input__section">
+            <label for="weight">Weight: </label>
+            <input
+              type="number"
+              id="weight"
+              placeholder="Weight in kg"
+            />
+          </div>
+          <div class="button__div">
+            <button type="submit" id="calculate">Calculate</button>
+          </div>
+        </form>
+        <p id="result">
+          Body mass index (BMI) is a measurement of body fat based on height and
+          weight that can help determine if weight increases the risk of
+          disease.
+        </p>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
