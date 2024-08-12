@@ -46,15 +46,21 @@ h1 {
   gap: 1rem;
 }
 
+form {
+  width: 100%;
+  padding: 0 1rem;
+}
+
 .input__section input {
-  width: 450px;
-  /* max-width: 450px; */
-  /* width: 100%; */
+  min-width: 150px;
+  max-width: 450px;
+  width: 100%;
   padding: 0.7rem;
   border-radius: 8px;
   border: 1px solid #00000014;
   outline: none;
   text-align: left;
+  box-sizing: border-box;
 }
 
 /* Hide the up and down arrows in input type number */
@@ -101,4 +107,13 @@ input[type="number"] {
   text-align: center;
   color: #5a5656af;
   height: 70px;
+}
+
+
+/* mediaQueries */
+
+@media screen and (max-width: 768px) {
+  .content__area {
+    width: 90%;
+  }
 }
