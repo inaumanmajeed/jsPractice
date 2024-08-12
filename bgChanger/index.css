@@ -35,6 +35,9 @@ body {
   height: 50vh;
   width: 50vw;
   gap: 1rem;
+  box-shadow: 2px 8px 4px 0px #00000014;
+padding: 2rem;
+border-radius: 16px;
 }
 
 /* button code */
