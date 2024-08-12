@@ -10,14 +10,16 @@ const p = document.createElement("p");
 
 let prevGuesses = [];
 let attempts = 1;
+console.log("🚀 ~ attempts:", attempts)
 let playGame = true;
 
 if (playGame) {
   submitButton.addEventListener("click", function (e) {
     e.preventDefault();
-    userNumber = parseInt(userInput.value);
+    const userValue = userInput.value.trim(); // Trim any whitespace
+    const userNumber = parseInt(userValue); // Parse the input as an integer
     console.log("🚀 ~ userNumber:", userNumber);
-    checkNumber(userInput);
+    checkNumber(userNumber);
   });
 }
 
