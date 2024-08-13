@@ -27,6 +27,30 @@ body {
 
 /* container code */
 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem ;
+  background-color:transparent;
+  box-shadow: 2px 8px 4px 0px #00000014;
+}
+nav .home__btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  color: #000;
+  font-size: 1rem;
+  font-family: "Grey Qo", sans-serif;
+  transition: all 0.3s ease;
+  border-radius: 25px;
+  width: 250px;
+  flex-grow: 0;
+}
+
 .container {
   display: flex;
   flex-direction: column;

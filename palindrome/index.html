@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guess-The-Number | js practice</title>
+    <title>Palindrome | js practice</title>
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
@@ -14,28 +14,27 @@
     </nav>
     <div class="container">
       <div class="content__area">
-        <h1>Guess the Number</h1>
-        <p>Can you guess the secret number? Test your luck and skills!</p>
+        <h1>Palindrome</h1>
+        <p>Enter a word to discover all possible Palindromes within it!</p>
         <form>
           <div class="input__section">
-            <label for="number">Number: </label>
+            <label for="word">Word: </label>
             <input
-              type="number"
-              id="number"
-              placeholder="Enter your guess number"
+              type="text"
+              id="word"
+              placeholder="Enter your Word"
+              autocomplete="off"
             />
           </div>
           <div class="button__div">
-            <button type="submit" id="find__number">Bring it on</button>
-            <button type="submit" id="restart__number">Restart</button>
+            <button type="submit" id="Check__word">Check</button>
           </div>
         </form>
         <div class="results__div">
           <p id="result">
             Let's get started to explore the treasure of curiosity
           </p>
-          <p id="attempts">You have 10 attempts to accomplish the target</p>
-          <p id="previous__guesses"></p>
+          <p id="possible__words"></p>
         </div>
       </div>
     </div>
