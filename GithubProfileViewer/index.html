@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github-Peak | js practice</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <nav>
+      <button class="home__btn" onclick="window.location.href='../index.html'">
+        Home
+      </button>
+    </nav>
+    <div class="container">
+      <div class="content__area">
+        <h1>Github Peak</h1>
+        <p>Have an overview of your Github account</p>
+        <div class="profile__details">
+          <div class="user__img">
+            <img class="user__img__src skeleton" src="" />
+          </div>
+          <div class="user__name"><span id='userName'></span></div>
+        </div>
+        <form>
+          <div class="input__section">
+            <label for="github__username">Github: </label>
+            <input
+              type="text"
+              autocomplete="off"
+              accesskey="Enter"
+              autofocus
+              spellcheck="false"
+              id="github__username"
+              placeholder="Enter your username"
+            />
+          </div>
+          <p id="error"></p>
+          <div class="button__div">
+            <button type="submit" id="find__user">Explore</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
