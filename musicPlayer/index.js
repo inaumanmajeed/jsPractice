@@ -31,7 +31,7 @@ $(function () {
     buffInterval = null,
     tFlag = false,
     albums = [
-      "Dawn",
+      "I wanna dance",
       "No Way Back",
       "Feelings",
       "Looking for more",
@@ -55,7 +55,7 @@ $(function () {
     playPreviousTrackButton = $("#play-previous"),
     playNextTrackButton = $("#play-next"),
     currIndex = -1,
-    audio; // Declare audio variable
+    audio;
 
   // Function to play/pause the track
   function playPause() {
@@ -145,6 +145,7 @@ $(function () {
       tProgress.text("00:00");
       albumArt.removeClass("buffering").removeClass("active");
       clearInterval(buffInterval);
+      selectTrack(1); // Automatically play the next track
     }
   }
 
@@ -163,6 +164,13 @@ $(function () {
   function selectTrack(flag) {
     if (flag === 0 || flag === 1) ++currIndex;
     else --currIndex;
+
+    // Loop back to the start if the playlist ends
+    if (currIndex >= albumArtworks.length) {
+      currIndex = 0;
+    } else if (currIndex < 0) {
+      currIndex = albumArtworks.length - 1;
+    }
 
     if (currIndex > -1 && currIndex < albumArtworks.length) {
       if (flag === 0) i.attr("class", "fa fa-play");
@@ -184,7 +192,7 @@ $(function () {
 
       nTime = 0;
       bTime = new Date().getTime();
-      tFlag = false; // Reset tFlag
+      tFlag = false;
 
       if (flag !== 0) {
         audio.play();
@@ -228,6 +236,11 @@ $(function () {
     sArea.on("click", playFromClickedPos);
 
     $(audio).on("timeupdate", updateCurrTime);
+
+    // Auto-play the next track when the current one ends
+    $(audio).on("ended", function () {
+      selectTrack(1);
+    });
 
     playPreviousTrackButton.on("click", function () {
       selectTrack(-1);
