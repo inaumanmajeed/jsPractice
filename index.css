@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Exo:400,700");
 @import url("https://fonts.googleapis.com/css2?family=Grey+Qo&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@font-face {
+  font-family: 'Grey Qo';
+  src: url('./path/to/font/GreyQo.woff2') format('woff2'),
+       url('./path/to/font/GreyQo.woff') format('woff'),
+       url('./path/to/font/GreyQo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 * {
   margin: 0px;
